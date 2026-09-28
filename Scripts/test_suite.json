@@ -1,0 +1,100 @@
+{
+    "test_suite": {
+        "positive": [
+            {
+                "id": "TC001",
+                "title": "Login with valid username and password",
+                "steps": [
+                    "Enter a valid username",
+                    "Enter a valid password",
+                    "Click the login button"
+                ],
+                "expected_result": "User is logged in successfully and redirected to the dashboard"
+            },
+            {
+                "id": "TC004",
+                "title": "Login with valid username and password (case insensitive)",
+                "steps": [
+                    "Enter a valid username with different case",
+                    "Enter a valid password",
+                    "Click the login button"
+                ],
+                "expected_result": "User is logged in successfully and redirected to the dashboard"
+            }
+        ],
+        "negative": [
+            {
+                "id": "TC002",
+                "title": "Login with invalid username",
+                "steps": [
+                    "Enter an invalid username",
+                    "Enter a valid password",
+                    "Click the login button"
+                ],
+                "expected_result": "Error message 'Invalid username or password' is displayed"
+            },
+            {
+                "id": "TC005",
+                "title": "Login with invalid password",
+                "steps": [
+                    "Enter a valid username",
+                    "Enter an invalid password",
+                    "Click the login button"
+                ],
+                "expected_result": "Error message 'Invalid username or password' is displayed"
+            },
+            {
+                "id": "TC006",
+                "title": "Login with empty username",
+                "steps": [
+                    "Leave the username field empty",
+                    "Enter a valid password",
+                    "Click the login button"
+                ],
+                "expected_result": "Error message 'Username is required' is displayed"
+            },
+            {
+                "id": "TC007",
+                "title": "Login with empty password",
+                "steps": [
+                    "Enter a valid username",
+                    "Leave the password field empty",
+                    "Click the login button"
+                ],
+                "expected_result": "Error message 'Password is required' is displayed"
+            }
+        ],
+        "boundary": [
+            {
+                "id": "TC003",
+                "title": "Login with maximum length username",
+                "steps": [
+                    "Enter a username with the maximum allowed length",
+                    "Enter a valid password",
+                    "Click the login button"
+                ],
+                "expected_result": "User is logged in successfully and redirected to the dashboard"
+            },
+            {
+                "id": "TC008",
+                "title": "Login with maximum length password",
+                "steps": [
+                    "Enter a valid username",
+                    "Enter a password with the maximum allowed length",
+                    "Click the login button"
+                ],
+                "expected_result": "User is logged in successfully and redirected to the dashboard"
+            },
+            {
+                "id": "TC009",
+                "title": "Login with minimum length password",
+                "steps": [
+                    "Enter a valid username",
+                    "Enter a password with the minimum allowed length",
+                    "Click the login button"
+                ],
+                "expected_result": "User is logged in successfully and redirected to the dashboard"
+            }
+        ]
+    }
+}

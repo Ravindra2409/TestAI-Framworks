@@ -1,0 +1,65 @@
+{
+  "open login page": {
+    "action": "goto",
+    "selector": "https://www.saucedemo.com/"
+  },
+  "enter valid username": {
+    "action": "fill",
+    "selector": "#user-name",
+    "value": "standard_user"
+  },
+  "enter valid username with different case": {
+    "action": "fill",
+    "selector": "#user-name",
+    "value": "STANDARD_USER"
+  },
+  "enter invalid username": {
+    "action": "fill",
+    "selector": "#user-name",
+    "value": "invalid_user"
+  },
+  "leave username empty": {
+    "action": "fill",
+    "selector": "#user-name",
+    "value": ""
+  },
+  "leave password empty": {
+    "action": "fill",
+    "selector": "#password",
+    "value": ""
+  },
+  "enter valid password": {
+    "action": "fill",
+    "selector": "#password",
+    "value": "secret_sauce"
+  },
+  "enter invalid password": {
+    "action": "fill",
+    "selector": "#password",
+    "value": "wrongPass"
+  },
+  "leave the password field empty": {
+    "action": "fill",
+    "selector": "#password",
+    "value": ""
+  },
+  "enter a username with the maximum allowed length": {
+    "action": "fill",
+    "selector": "#user-name",
+    "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "enter a password with the maximum allowed length": {
+    "action": "fill",
+    "selector": "#password",
+    "value": "supersecurepasswordthatisreallyreallylong1234567890"
+  },
+  "enter a password with the minimum allowed length": {
+    "action": "fill",
+    "selector": "#password",
+    "value": "pass1234"
+  },
+  "click login": {
+    "action": "click",
+    "selector": "#login-button"
+  }
+}
